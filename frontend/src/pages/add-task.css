@@ -16,7 +16,7 @@
   overflow: hidden;
 }
 
-/* Left Panel */
+
 .task-left {
   flex: 1;
   background: linear-gradient(135deg, #a3aec4, #1A3D63);
@@ -55,7 +55,7 @@
   background-color: #0A1931;
 }
 
-/* Right Panel */
+
 .task-right {
   flex: 1;
   padding: 40px;
@@ -65,7 +65,7 @@
   justify-content: center;
 }
 
-/* Input Groups */
+
 .task-input-group {
   display: flex;
   align-items: center;
@@ -90,7 +90,7 @@ input, textarea {
   color: #0A1931;
 }
 
-/* Submit Button */
+
 .task-submit-btn {
   width: 100%;
   padding: 12px;
@@ -109,7 +109,7 @@ input, textarea {
   background-color: #0A1931;
 }
 
-/* Message */
+
 .task-message {
   margin-top: 10px;
   color: #1A3D63;

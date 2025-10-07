@@ -3,7 +3,9 @@ import './add-task.css';
 import { useNavigate } from 'react-router-dom';
 import { FaCalendarAlt, FaRegEdit, FaAlignLeft } from 'react-icons/fa';
 
+
 export default function AddTask() {
+  const API_URL = process.env.REACT_APP_API_URL || 'https://zany-space-rotary-phone-g4rvqqrgqvxgh56w-5000.app.github.dev';
   const navigate = useNavigate();
   const [task, setTask] = useState({
     title: '',
@@ -19,7 +21,7 @@ export default function AddTask() {
 
   const handleSubmit = async () => {
     try {
-      const res = await fetch('http://localhost:5000/api/tasks', {
+    const res = await fetch(`${API_URL}/api/tasks`, {  
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(task),

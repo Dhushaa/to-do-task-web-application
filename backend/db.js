@@ -1,14 +1,25 @@
 const mysql = require('mysql2');
-const connection = mysql.createConnection({
-  host: 'localhost',
-  user: 'root',
-  password: '', // your password
-  database: 'to_do_task'
-});
 
-connection.connect((err) => {
-  if (err) throw err;
-  console.log('MySQL Connected!');
-});
+const config = {
+  host: process.env.DB_HOST || 'localhost',
+  user: process.env.DB_USER || 'root',
+  password: process.env.DB_PASSWORD || '',
+  database: process.env.DB_NAME || 'to_do_task'
+};
 
-module.exports = connection;
+function connectWithRetry() {
+  const connection = mysql.createConnection(config);
+
+  connection.connect((err) => {
+    if (err) {
+      console.error('Database connection failed, retrying in 5s...', err.message);
+      setTimeout(connectWithRetry, 5000);
+    } else {
+      console.log('MySQL Connected!');
+    }
+  });
+
+  module.exports = connection;
+}
+
+connectWithRetry();

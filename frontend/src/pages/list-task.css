@@ -1,4 +1,4 @@
-/* Page Layout */
+
 .list-page {
   padding: 20px 20px 40px;
   background-color: #F6FAFD;
@@ -9,7 +9,7 @@
   overflow-y: auto;
 }
 
-/* Container */
+
 .list-container {
   max-width: 900px;
   width: 100%;
@@ -24,7 +24,7 @@
   text-align: center;
 }
 
-/* Header Row */
+
 .list-header,
 .list-card {
   display: grid;
@@ -41,7 +41,7 @@
   color: #0A1931;
 }
 
-/* Task Card */
+
 .list-card {
   background: white;
   border: 1px solid #B3CFE5;
@@ -55,7 +55,6 @@
   transform: translateY(-3px);
 }
 
-/* Columns */
 .list-col {
   display: flex;
   flex-direction: column;
@@ -80,7 +79,7 @@
   text-align: center;
 }
 
-/* Actions */
+
 .actions {
   flex-direction: row;
   justify-content: center;
@@ -102,7 +101,7 @@
   transform: scale(1.15);
 }
 
-/* Remove default focus box on all buttons */
+
 button,
 button:focus,
 button:active {
@@ -111,7 +110,7 @@ button:active {
   background: none;
 }
 
-/* Done Button */
+
 .done {
   align-items: center;
 }
@@ -136,7 +135,7 @@ button:active {
   background-color: #0A1931;
 }
 
-/* Popups */
+
 .popup {
   position: fixed;
   top: 0;
@@ -159,8 +158,7 @@ button:active {
   box-shadow: 0 3px 6px rgba(0,0,0,0.2);
 }
 
-/* Close Icon */
-/* Close Icon */
+
 .popup-close {
   
   color: #0A1931;
@@ -182,7 +180,7 @@ button:active {
   color: #0A1931;
 }
 
-/* Save Button */
+
 .save-btn {
   background-color: #1A3D63;
   color: white;
@@ -199,7 +197,7 @@ button:active {
   background-color: #0A1931;
 }
 
-/* Empty Message */
+
 .list-empty {
   font-style: italic;
   color: #4A7FA7;

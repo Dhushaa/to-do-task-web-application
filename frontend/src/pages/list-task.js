@@ -2,7 +2,9 @@ import React, { useEffect, useState } from 'react';
 import './list-task.css';
 import { FaCheckCircle, FaEye, FaEdit, FaTrash, FaTimes } from 'react-icons/fa';
 
+
 export default function ListTask() {
+  const API_URL = process.env.REACT_APP_API_URL || 'https://zany-space-rotary-phone-g4rvqqrgqvxgh56w-5000.app.github.dev';
   const [tasks, setTasks] = useState([]);
   const [message, setMessage] = useState('');
   const [viewTask, setViewTask] = useState(null);
@@ -11,7 +13,7 @@ export default function ListTask() {
 
   const fetchTasks = async () => {
     try {
-      const res = await fetch('http://localhost:5000/api/tasks/todo');
+     const res = await fetch(`${API_URL}/api/tasks/todo`); 
       const data = await res.json();
       setTasks(data);
     } catch (error) {
@@ -25,7 +27,7 @@ export default function ListTask() {
 
   const handleDone = async (id) => {
     try {
-      await fetch(`http://localhost:5000/api/tasks/${id}/done`, { method: 'PUT' });
+     await fetch(`${API_URL}/api/tasks/${id}/done`, { method: 'PUT' });
       setMessage('Task marked as done');
       fetchTasks();
     } catch (error) {
@@ -35,7 +37,7 @@ export default function ListTask() {
 
   const handleDelete = async (id) => {
     try {
-      await fetch(`http://localhost:5000/api/tasks/${id}`, { method: 'DELETE' });
+      await fetch(`${API_URL}/api/tasks/${id}`, { method: 'DELETE' });
       setMessage('Task deleted');
       fetchTasks();
     } catch (error) {
@@ -60,7 +62,7 @@ export default function ListTask() {
 
   const handleEditSubmit = async () => {
     try {
-      await fetch(`http://localhost:5000/api/tasks/${editTask.id}`, {
+     await fetch(`${API_URL}/api/tasks/${editTask.id}`, {
         method: 'PUT',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(editForm),
