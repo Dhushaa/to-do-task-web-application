@@ -17,10 +17,3 @@ A full-stack task management application built with **React**, **Node.js**, and 
 - Database - MySQL
 - Style - vanilla css 
 
-
-
-
-
-=======
-# to-do-task-web-application
->>>>>>> 8d01095aed0fdd558b111e9ecdf7e4367c1fa3a2
