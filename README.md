@@ -1,9 +1,6 @@
-<<<<<<< HEAD
 📝 To-Do Task App
 
 A full-stack task management application built with **React**, **Node.js**, and **MySQL**, designed to help users create, manage, and track tasks efficiently. The app features a clean UI, responsive design, and scalable backend logic.
-
-
 
  🚀 Features
 
@@ -12,7 +9,6 @@ A full-stack task management application built with **React**, **Node.js**, and 
 - 🔍 Filter and search tasks
 - 🖥️ Responsive UI (mobile-friendly)
 - 🔗 RESTful API integration
-- 🐳 Dockerized setup with Compose for multi-container orchestration
 
 🧰 Technologies Used
 
