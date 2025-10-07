@@ -1,0 +1,117 @@
+.task-page {
+  display: flex;
+  height: 80vh;
+  justify-content: center;
+  align-items: center;
+  background-color: #F6FAFD;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.task-container {
+  display: flex;
+  width: 900px;
+  height: 480px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+/* Left Panel */
+.task-left {
+  flex: 1;
+  background: linear-gradient(135deg, #a3aec4, #1A3D63);
+  color: #0A1931;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.task-heading {
+  font-size: 32px;
+  margin-bottom: 15px;
+  font-weight: bold;
+  color: #0A1931;
+}
+
+.task-paragraph {
+  font-size: 16px;
+  margin-bottom: 30px;
+  color: #0A1931;
+}
+
+.task-learn-btn {
+  padding: 10px 30px;
+  background-color: #1A3D63;
+  color: #F6FAFD;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.task-learn-btn:hover {
+  background-color: #0A1931;
+}
+
+/* Right Panel */
+.task-right {
+  flex: 1;
+  padding: 40px;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* Input Groups */
+.task-input-group {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  border: 1px solid #4A7FA7;
+  border-radius: 8px;
+  background-color: #fff;
+  padding: 10px 12px;
+}
+
+.task-icon {
+  margin-right: 10px;
+  color: #4A7FA7;
+}
+
+input, textarea {
+  border: none;
+  outline: none;
+  font-size: 16px;
+  width: 100%;
+  resize: none;
+  color: #0A1931;
+}
+
+/* Submit Button */
+.task-submit-btn {
+  width: 100%;
+  padding: 12px;
+  background-color: #1A3D63;
+  color: #F6FAFD;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: background-color 0.3s ease;
+}
+
+.task-submit-btn:hover {
+  background-color: #0A1931;
+}
+
+/* Message */
+.task-message {
+  margin-top: 10px;
+  color: #1A3D63;
+  font-weight: bold;
+}

@@ -1,0 +1,208 @@
+/* Page Layout */
+.list-page {
+  padding: 20px 20px 40px;
+  background-color: #F6FAFD;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  font-family: 'Segoe UI', sans-serif;
+  overflow-y: auto;
+}
+
+/* Container */
+.list-container {
+  max-width: 900px;
+  width: 100%;
+  margin-top: 20px;
+}
+
+/* Heading */
+.list-heading {
+  font-size: 1.8rem;
+  margin-bottom: 12px;
+  color: #0A1931;
+  text-align: center;
+}
+
+/* Header Row */
+.list-header,
+.list-card {
+  display: grid;
+  grid-template-columns: 3fr 1fr 1fr 1fr;
+  align-items: center;
+  padding: 10px 16px;
+  border-bottom: 1px solid #B3CFE5;
+}
+
+.list-header {
+  background-color: #B3CFE5;
+  font-weight: bold;
+  border-radius: 8px 8px 0 0;
+  color: #0A1931;
+}
+
+/* Task Card */
+.list-card {
+  background: white;
+  border: 1px solid #B3CFE5;
+  border-radius: 6px;
+  margin-bottom: 10px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+  transition: transform 0.15s ease;
+}
+
+.list-card:hover {
+  transform: translateY(-3px);
+}
+
+/* Columns */
+.list-col {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.title-desc .list-title {
+  font-size: 1rem;
+  font-weight: bold;
+  margin-bottom: 4px;
+  color: #0A1931;
+}
+
+.title-desc .list-desc {
+  font-size: 0.9rem;
+  color: #1A3D63;
+}
+
+.date .list-date {
+  font-size: 0.9rem;
+  color: #4A7FA7;
+  text-align: center;
+}
+
+/* Actions */
+.actions {
+  flex-direction: row;
+  justify-content: center;
+  gap: 8px;
+}
+
+.icon-btn {
+  background-color: transparent;
+  border: none;
+  font-size: 1.1rem;
+  color: #1A3D63;
+  cursor: pointer;
+  padding: 4px;
+  transition: color 0.2s ease, transform 0.2s ease;
+}
+
+.icon-btn:hover {
+  color: #0A1931;
+  transform: scale(1.15);
+}
+
+/* Remove default focus box on all buttons */
+button,
+button:focus,
+button:active {
+  outline: none;
+  box-shadow: none;
+  background: none;
+}
+
+/* Done Button */
+.done {
+  align-items: center;
+}
+
+.done-btn {
+  background-color: #1A3D63;
+  color: white;
+  border: none;
+  padding: 5px 8px;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  justify-content: center;
+  transition: background-color 0.3s ease;
+  font-size: 0.85rem;
+}
+
+.done-btn:hover {
+  background-color: #0A1931;
+}
+
+/* Popups */
+.popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.35);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+}
+
+.popup-content {
+  background: white;
+  padding: 18px;
+  border-radius: 8px;
+  width: 300px;
+  position: relative;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.2);
+}
+
+/* Close Icon */
+/* Close Icon */
+.popup-close {
+  
+  color: #0A1931;
+  
+}
+
+
+
+
+/* Edit Form */
+.popup-content input,
+.popup-content textarea {
+  width: 100%;
+  margin-bottom: 8px;
+  padding: 6px;
+  font-size: 0.9rem;
+  border: 1px solid #4A7FA7;
+  border-radius: 4px;
+  color: #0A1931;
+}
+
+/* Save Button */
+.save-btn {
+  background-color: #1A3D63;
+  color: white;
+  border: none;
+  padding: 7px 10px;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+  width: 100%;
+  font-size: 0.9rem;
+}
+
+.save-btn:hover {
+  background-color: #0A1931;
+}
+
+/* Empty Message */
+.list-empty {
+  font-style: italic;
+  color: #4A7FA7;
+  margin-top: 20px;
+  text-align: center;
+}
