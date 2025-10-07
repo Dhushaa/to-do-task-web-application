@@ -6,9 +6,9 @@ A full-stack task management application built with **React**, **Node.js**, and 
 
 - ✅ Add, edit, delete tasks
 - 📋 Task list with status tracking
-- 🔍 Filter and search tasks
 - 🖥️ Responsive UI (mobile-friendly)
 - 🔗 RESTful API integration
+- 🐳 The app runs in a Dockerized setup with multiple containers managed by Docker Compose, and is designed to work smoothly inside GitHub Codespaces.
 
 🧰 Technologies Used
 
