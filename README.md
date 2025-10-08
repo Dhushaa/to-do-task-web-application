@@ -9,6 +9,7 @@ A full-stack task management application built with **React**, **Node.js**, and 
 - 🖥️ Responsive UI (mobile-friendly)
 - 🔗 RESTful API integration
 - 🐳 The app runs in a Dockerized setup with multiple containers managed by Docker Compose, and is designed to work smoothly inside GitHub Codespaces.
+- (todo-backend port 5000 - public)
 
 🧰 Technologies Used
 
